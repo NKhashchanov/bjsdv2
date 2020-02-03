@@ -18,9 +18,9 @@ class Profile {
      }
 
     static addMoney({ currency, amount }, callback) {
-        console.log(`Adding ${amount} of ${currency} to ${this.user.username}`);
+        //console.log(`Adding ${amount} of ${currency} to ${this.user.username}`);
         return ApiConnector.addMoney({ currency, amount }, (err, data) => {
-            console.log(`Added ${amount} of ${currency} to ${this.user.username}`);
+            //console.log(`Added ${amount} of ${currency} to ${this.user.username}`);
             callback(err, data);
         });
     }

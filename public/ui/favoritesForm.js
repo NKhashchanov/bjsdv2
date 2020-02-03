@@ -2,16 +2,16 @@
 // ApiConnector.getFavorites((err, data) => console.log(data));
 
 
-function initForms() {
+function initFormsFavorites() {
     const addUserForm = document.getElementById('addUser');
     return [addUserForm];
 }
 
-initForms().forEach(el => {
-    el.querySelector('.button').addEventListener('click', function(){action(this, el)});
+initFormsFavorites().forEach(el => {
+    el.querySelector('.button').addEventListener('click', function(){actionFavorites(this, el)});
 });
 
-function action(context, form) {
+function actionFavorites(context, form) {
     if (context.innerText === 'Добавить') {
         const id = form.querySelector('[placeholder="ID"]').value,
             name = form.querySelector('[placeholder="Имя"]').value;

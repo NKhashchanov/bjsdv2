@@ -1,2 +1,1 @@
-ApiConnector.current((err, data) => console.log(data));
-
+ApiConnector.current((err, data) => showProfile(data.user));
